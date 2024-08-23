@@ -56,6 +56,7 @@ function generateHexColor () {
 }
 
 function generateGradientColor () {
-    gradient = "linear-gradient(45deg, "+generateHexColor()+", "+generateHexColor()+", "+generateHexColor()+")"
+    random_deg = Math.floor(Math.random() * 360)
+    gradient = "linear-gradient(" +random_deg +"deg, "+generateHexColor()+", "+generateHexColor()+", "+generateHexColor()+")"
     return gradient
 }
